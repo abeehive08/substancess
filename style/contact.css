@@ -1,0 +1,242 @@
+*{
+	margin: 0;
+	padding: 0; 
+	font-family: 'Dosis', sans-serif; 
+}
+.hero{
+	width: 80%; 
+	margin: auto;
+}
+.navbar{
+	margin: 30px auto;
+	display: flex;
+	align-items: center;
+}
+ul{
+	flex: 1; 
+	text-align: right;
+}
+ul li{
+	display: inline-block;
+	list-style: none;
+	margin: 0 25px;
+}
+ul li a{
+	text-decoration: none;
+	color: #000;
+	padding: 0 10px;
+	position: relative;
+} 
+ul li a::after{
+	content: ''; 
+	width: 0; 
+	height: 10px; 
+	background: #ecbad0; 
+	position: absolute; 
+	left: 50%;
+	transform: translateX(-50%);
+	top: -55px;
+	transition: 0.5s;
+}
+ul li a:hover::after{
+	width: 100%;
+}
+.navbar-icons img{
+	height: 25px; 
+	margin-left: 40px;
+	cursor: pointer;
+}
+.navbar-icons{
+	margin-left: 40px;
+}
+.banner{
+	display: flex; 
+	margin-top: 80px; 
+}
+.left-column,.right-column{
+	flex-basis: 50%;
+}
+.right-column img{
+	max-width: 100%;
+	height: auto;
+	cursor: pointer;
+	transition: transform 0.3s, box-shadow 0.3s;
+}
+.right-column img:hover{
+    transform: scale(1.1);
+}
+*{
+	padding: 0; 
+	margin: 0;
+	box-sizing: border-box; 
+} 
+body{
+	font-family: 'Outfit';
+	background: linear-gradient(#ffdad5, #fff7f9);
+}
+.contact-container{
+	height: 100vh; 
+	display: flex; 
+	align-items: center;
+	justify-content: space-evenly;
+} 
+.contact-left{
+	display: flex;
+	flex-direction: column; 
+	align-items: start;
+	gap: 20px; 
+}
+.contact-left-title h2{
+	font-weight: 600;
+	color: #a363aa;
+	font-size: 40px;
+	margin-bottom: 5px;
+}
+.contact-left-title hr{
+	border: none;
+	width: 120px; 
+	height: 5px;
+	background-color: #a363aa; 
+	border-radius: 10px; 
+	margin-bottom: 20px; 
+}
+.contact-inputs{
+	width: 400px; 
+	height: 50px; 
+	border: none; 
+	outline: none; 
+	padding-left: 25px; 
+	font-weight: 500;
+	color: #666;
+	border-radius: 50px;
+}
+.contact-left textarea{
+	height: 140px; 
+	padding-top: 15px; 
+	border-radius: 20px;
+}
+.contact-inputs:focus{
+	border: 2px solid #ff994f;
+}
+.contact-inputs::placeholder{
+	color: #a9a9a9;
+}
+.contact-left button{
+	display: flex; 
+	align-items: center; 
+	padding: 15px 30px; 
+	font-size: 16px; 
+	color: #fff;
+	gap: 10px; 
+	border: none;
+	border-radius: 50px; 
+	background: linear-gradient(270deg, #ff994f, #fa6d86);
+	cursor: pointer;
+}
+.contact-left button img{
+	height: 15px;
+}
+.contact-right img{
+	width: 500px; 
+}
+@media (max-width:800px) {
+	.contact-inputs{
+		width: 80vw;
+	}
+	.contact_right{
+		display: none;
+	}
+}
+.selfies {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.photo {
+    text-align: center;
+}
+
+.selfies img {
+    width: 250px; 
+    height: 350px; 
+    object-fit: cover; 
+	border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.selfies img:active {
+    box-shadow: 0 0 20px 5px pink; 
+    transform: scale(1.1);
+}
+
+.selfies p {
+    font-size: 18px; 
+    margin-top: 10px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.credits {
+    padding: 1rem;
+    border-top: 2px solid #ecbad0;
+    text-align: center;
+}
+
+.credits .container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.back-top {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2rem;
+    color: #c78ca0;
+    text-decoration: none;
+    background-color: #ffe1ed;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    border: 1px solid #c78ca0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.back-top:hover {
+    background-color: #c78ca0;
+    color: #fff;
+}
+
+.credits-text {
+    font-family: 'Allura', cursive;
+    font-size: 1.5rem;
+    color: #333;
+    border: 2px dashed #c78ca0;
+    padding: 1rem;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.cute-container {
+    background-color: #fce4ec;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(255, 182, 193, 0.2);
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+.cute-container h2 {
+    font-family: 'Cute Font', sans-serif;
+    font-size: 2rem;
+    color: #d81b60;
+    margin-bottom: 1rem;
+}
+
+.cute-container p {
+    font-family: 'Dosis', sans-serif;
+    color: #333;
+    margin: 0.5rem 0;
+}
